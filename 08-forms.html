@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Yapisi</title>
+</head>
+
+<body>
+    <h1>Form Yapisi</h1>
+    <h6>* doldurulmasi zorunlu alanlar.</h6>
+    <form method="post" action="users/update">
+
+        <label for="name">Lutfen adinizi giriniz</label>
+        <input type="text" id="name" />
+        <br>
+        <br>
+        <label for="surName">Lutfen soyadinizi giriniz</label>
+        <input type="text" id="surName" />
+        <br>
+        <br>
+        <label for="email">Emailinizi giriniz</label>
+        <input type="email" id="email" />
+        <br><br>
+        <label for="sifre">Sifrenizi giriniz</label>
+        <input type="password" id="sifre" />
+        <br>
+        <br>
+        <label for="phoneNumber">Telefon numaranizi giriniz</label>
+        <input type="number" id="phoneNumber" />
+        <br>
+        <br>
+        <label for="cinsiyet">Cinsiyetinizi seciniz.</label>
+
+        <input type="radio" name="cinsiyet" id="erkek" />
+        <label for="erkek">Erkek</label>
+
+        <input type="radio" name="cinsiyet" id="kadin" />
+        <label for="kadin">Kadin</label>
+
+        <input type="radio" name="cinsiyet" id="diger" />
+        <label for=" diger">Belirtmek istemiyorum.</label>
+        <br>
+        <br>
+        <label for="Dogum">Lutfen dogum tarihinizi seciniz.</label>
+        <input type="date" id="Dogum" />
+        <br>
+        <br>
+        <label for="giris">Lutfen seyahat tarihinizi giriniz.</label>
+        <input type="datetime-local" id="giris" />
+        <br>
+        <br>
+        <label for="hobby">Hobilerinizi seciniz.</label>
+        <br>
+        <input type="checkbox" name="hobby" id="hobby" />
+        <label for="hobby">Yazilim</label>
+        <br>
+        <input type="checkbox" name="hobby" id="hobby" />
+        <label for="hobby">Matematik</label>
+        <br>
+        <input type="checkbox" name="hobby" id="hobby" />
+        <label for="hobby">Siir</label>
+        <br>
+        <label for="renk">Favori renginizi giriniz. &nbsp;</label>
+        <input type="color" id="renk" />
+        <br>
+        <br>
+        <label for="aralik">Bir aralik seciniz &nbsp;</label>
+        <input type="range" step="10" id="aralik" />
+        <br>
+        <br>
+        <label for="saat">Giris saatinizi seciniz. &nbsp;</label>
+        <input type="time" id="saat" />
+        <br>
+        <br>
+        <label for="dosya">CV nizi yukleyiniz.</label>
+        <input type="file" id="dosya" />
+        <br>
+        <br>
+        <select name="sehir" id="">
+            <option value="">Dogum yeriniz</option>
+            <option value="1">Trabzon</option>
+            <option value="2">Bursa</option>
+            <option value="3">Moskova</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Sirketimizden beklentilerinizi yaziniz.</label>
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="button" value="Buton">
+        <input type="submit" value="Gonder">
+        <input type="reset" value="Temizle">
+
+
+
+
+
+    </form>
+    <p>Not: id ile for degerlerinin ayni olmasi gerekmektedirki istedigimiz sonucu alabilelim.</p>
+    <!--yorum satiri : &nbsp;==> bosluk birakmaya yarar.-->
+    <!-- shift+alt+a tusuna basinca otomatik yorum satiri acar. -->
+
+</body>
+
+</html>
